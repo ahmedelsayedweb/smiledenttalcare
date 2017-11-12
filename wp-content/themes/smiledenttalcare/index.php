@@ -150,36 +150,14 @@
     <p >Fill out the form below and we will contact you during our working hours.</p>
     <div class="row">
       <div class="col-md-offset-1 col-md-10 col-md-offset-1">
-        <form action="http://www.opuswork.org/dentologist/mail.php" class="contact-form" id="contactForm" method="post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group user"><input type="text" name="firstname" class="form-control" placeholder="First Name"></div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group user"><input type="text" name="lastname" class="form-control" placeholder="Last Name"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group phone"><input type="text" name="phone" class="form-control" placeholder="Phone Number"></div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group email"><input type="email" name="email" class="form-control" placeholder="E-mail"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <textarea name="message" placeholder="Question/Comment" class="form-control"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <button class="btn btn-default blue-btn" name="btnSubmit">Send</button>
-            </div>
-          </div>
-        </form>
+        <?php
+				  $lang = custom_get_current_lang();
+    				if($lang == 'ar'){
+						 echo do_shortcode('[contact-form-7 id="15" title="Contact"]'); 
+						}elseif($lang == 'en'){
+						echo do_shortcode('[contact-form-7 id="15" title="Contact"]'); 
+					};
+				  	?>
       </div>
     </div>
   </div>

@@ -1855,3 +1855,7 @@ aside#polylang-2 {
 label.screen-reader-text {
     display: none;
 }
+textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+    padding: 10px 13px;
+}

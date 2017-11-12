@@ -28,15 +28,6 @@
 <!--Preload section ends here--> 
 
 <!--Search section starts here-->
-<div class="search-secion">
-<div class="close-search font-40 text-right"><a href="#" class="color-white"><i class="fa fa-close"></i></a></div>
- <div class="search-container">
-  <form action="http://www.opuswork.org/dentologist/?" class="widget-search">
-    <input type="text" class="form-control" placeholder="Type and hit enter">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-  </div>
-</div>
 <!--Search section ends here--> 
 
 <!--header section starts here-->
@@ -97,7 +88,11 @@
 <header class="stuck up hidden-xs hidden-sm">
   <div class="container">
     <div class="row">
-      <div class="col-md-4"><a href="index-2.html" class="brand"><img src="images/logo.png" alt="logo"></a></div>
+      <div class="col-md-4">
+		  <a href="<?php bloginfo('url'); ?>" class="brand">
+			  <img src="<?php echo $logo; ?>" alt="logo">
+		  </a>
+		</div>
       <div class="col-md-8">
         <ul class="main-menu">
           <li class="current-menu-item"><a href="#" class="btn-default">Home<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
