@@ -1,0 +1,49 @@
+header .navbar-default ,
+ul.main-menu ,.caption-banner {
+    direction: rtl;
+}
+h6.color-white.text-uppercase.no-padding {
+    text-align: right;
+	    direction: rtl;
+}
+.appointment {
+    background: #00b2f0;
+    padding: 61px 0 62px 0;
+    direction: rtl;
+}
+.request a:before {
+    content: "\f133";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-right: 1px solid #fff;
+    padding: 14px 16px;
+    position: absolute;
+   right: 83%;
+    top: 0;
+}
+form .form-control {
+    height: 60px;
+    border-radius: 0;
+    padding-right: 41px;
+    text-align: right;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+    padding: 10px 13px;
+    text-align: right;
+}
+.contact-us {
+    padding: 96px 0 100px;
+    direction: rtl;
+}
+a.animated-button.button-one {
+    text-decoration: none;
+    padding-right: 21px;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

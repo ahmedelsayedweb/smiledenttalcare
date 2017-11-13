@@ -885,7 +885,7 @@ body .request-blue a:hover{
 
 /***** Detail Features Starts here *****/
 .feature-container{
-	background-color: rgba(43,53,75,0.8);	
+	background-color: rgba(43,53,75,0);	
 }
 .display-table
 {
@@ -942,7 +942,7 @@ body .request-blue a:hover{
     position: relative;
     vertical-align: middle;
     display: table-cell;
-    height: 320px;
+    height: 200px;
     padding: 0 10px;
 }
 .detail-features a{
@@ -1841,11 +1841,9 @@ body .gift:before{
 	display: block;
 }
 h2.text_center {
-    position: absolute;
     color: #fff;
-    left: 45%;
-    z-index: 23;
-    top: 20px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 aside#polylang-2 {
     display: inline-block;
@@ -1858,4 +1856,8 @@ label.screen-reader-text {
 textarea.wpcf7-form-control.wpcf7-textarea {
     width: 100%;
     padding: 10px 13px;
+}
+section.detail-features {
+    background-color: rgba(43,53,75,0.8);
+    padding: 20px 0;
 }

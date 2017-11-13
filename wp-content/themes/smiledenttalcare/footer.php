@@ -27,13 +27,28 @@
         <ul class="mobile">
           <li>
             <h4><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></h4>
-            <span>Give us a call today!</span></li>
+			  <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<span>Give us a call today!</span>'; 
+		}elseif($lang == 'en'){
+		echo '<span>Give us a call today!</span>'; 
+	};
+	?>
+            </li>
         </ul>
       </div>
       <div class="col-sm-4">
         <ul class="calender">
           <li>
-            <h4>Book Appointment</h4>
+			   <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<h4>Book Appointment</h4>'; 
+		}elseif($lang == 'en'){
+		echo '<h4>Book Appointment</h4>'; 
+	};
+	?>
             <span><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></span></li>
         </ul>
       </div>
@@ -47,9 +62,23 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-sm-6">
-		  <h4 class="color-white heading2-underline">About Us</h4>
+		    <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<h4 class="color-white heading2-underline">About Us</h4>'; 
+		}elseif($lang == 'en'){
+		echo '<h4 class="color-white heading2-underline">About Us</h4>'; 
+	};
+	?>
         <p class="color-white"><?php echo $description_footer; ?></p>
-        <h4 class="color-white social-heading">Follow Us</h4>
+		   <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<h4 class="color-white social-heading">Follow Us</h4>'; 
+		}elseif($lang == 'en'){
+		echo '<h4 class="color-white social-heading">Follow Us</h4>'; 
+	};
+	?>
         <ul class="social-links list-inline font-40">
           <li><a href="<?php echo $facebook; ?>"><i class="fa fa-facebook"></i></a></li>
           <li><a href="<?php echo $twitter; ?>"><i class="fa fa-twitter"></i></a></li>
@@ -57,7 +86,10 @@
         </ul>
       </div>
       <div class="col-md-4 col-sm-6">
-        <h4 class="color-white heading2-underline">Our Services</h4>
+		    <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<h4 class="color-white heading2-underline">Our Services</h4>
         <ul class="footer-list list-unstyled">
           <li><a href="#">General Dentistry</a></li>
           <li><a href="#">Family Dentistry</a></li>
@@ -65,10 +97,29 @@
           <li><a href="#">Teeth Whitening</a></li>
           <li><a href="#">Dental Implants</a></li>
           <li><a href="s#">Dental Sedation</a></li>
-        </ul>
+        </ul>'; 
+		}elseif($lang == 'en'){
+		echo '<h4 class="color-white heading2-underline">Our Services</h4>
+        <ul class="footer-list list-unstyled">
+          <li><a href="#">General Dentistry</a></li>
+          <li><a href="#">Family Dentistry</a></li>
+          <li><a href="#">Dental Prevention</a></li>
+          <li><a href="#">Teeth Whitening</a></li>
+          <li><a href="#">Dental Implants</a></li>
+          <li><a href="s#">Dental Sedation</a></li>
+        </ul>'; 
+	};
+	?>
       </div>
       <div class="col-md-4 col-sm-12">
-        <h4 class="color-white heading2-underline">Opening Hours</h4>
+		    <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<h4 class="color-white heading2-underline">Opening Hours</h4>'; 
+		}elseif($lang == 'en'){
+		echo '<h4 class="color-white heading2-underline">Opening Hours</h4>'; 
+	};
+	?>
         <?php echo $opening_hours; ?>
       </div>
     </div>

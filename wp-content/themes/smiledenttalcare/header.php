@@ -34,7 +34,7 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-sm-12 col-xs-9">
+      <div class="col-md-3 col-sm-12 col-xs-12">
 		  <a href="<?php bloginfo('url'); ?>" class="brand">
 			  <img src="<?php echo $logo; ?>" alt="logo" class="img-responsive">
 		  </a>
@@ -48,27 +48,30 @@
           </div>
         </nav>
       </div>
-      <div class="col-md-8 col-sm-12 col-xs-12">
+      <div class="col-md-9 col-sm-12 col-xs-12">
         <nav class="navbar navbar-default">
           <div class="container-fluid"> 
             
             <div class="collapse navbar-collapse" id="main-menu-dropdown">
               <ul class="main-menu text-center">
-                <li class="current-menu-item"><a href="#" class="btn-default">Home<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
-		</li>
-                <li><a href="#" class="btn-default">About<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
-                  
-                </li>
-                <li><a href="#" class="btn-default">Services<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
-                  
-                </li>
-                <li><a href="#" class="btn-default">Offers<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
-                  
-                </li>
-                <li><a href="#" class="btn-default">Careers<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
-                  
-                </li>
-                <li><a href="contact.html" class="btn-default">Contact</a></li>
+				   <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<li><a href="#">الرئيسية</a></li>
+                <li><a href="#about">عن الشركة</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#offers">العروض</a></li>
+                <li><a href="#">وظايف خالية</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>'; 
+		}elseif($lang == 'en'){
+		echo ' <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#contact">Contact Us</a></li>'; 
+	};
+	?>
 				 <li>  <?php
 					if(is_active_sidebar('header')){
 					dynamic_sidebar('header');
@@ -95,22 +98,25 @@
 		</div>
       <div class="col-md-8">
         <ul class="main-menu">
-          <li class="current-menu-item"><a href="#" class="btn-default">Home<i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i></a>
-		 
-		</li>
-          <li><a href="#" class="btn-default">About</a>
-           
-          </li>
-          <li><a href="#" class="btn-default">Services</a>
-            
-          </li>
-          <li><a href="#" class="btn-default">Offers</a>
-           
-          </li>
-          <li><a href="#" class="btn-default">Careers</a>
-            
-          </li>
-          <li><a href="#" class="btn-default">Contact</a></li>
+           <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<li><a href="#">الرئيسية</a></li>
+                <li><a href="#about">عن الشركة</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#offers">العروض</a></li>
+                <li><a href="#">وظايف خالية</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>'; 
+		}elseif($lang == 'en'){
+		echo ' <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#contact">Contact Us</a></li>'; 
+	};
+	?>
+			
         </ul>
       </div>
     </div>
