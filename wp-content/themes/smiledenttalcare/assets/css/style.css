@@ -670,7 +670,7 @@ header.stuck .brand{
     padding:10px  0;
 }
 header.stuck .brand img{
-    
+        width: 28%;
 }
 header.stuck .main-menu li{
     padding: 39px 5px;
